@@ -1,0 +1,27 @@
+# 编译产物
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# 数据库文件（运行时生成）
+*.db
+
+# 配置文件（含 API Key，不能泄露）
+config/lagent.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Claude Code
+.claude/
+
+# Linux 编译产物（Windows 是 *.exe 已在上方）
+lagent
+
+# OS
+.DS_Store
+Thumbs.db

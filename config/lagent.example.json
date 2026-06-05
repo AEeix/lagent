@@ -1,0 +1,28 @@
+{
+  "providers": {
+    "openai": {
+      "api_key": "",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-4o-mini"
+    },
+    "deepseek": {
+      "api_key": "",
+      "base_url": "https://api.deepseek.com/v1",
+      "model": "deepseek-chat"
+    }
+  },
+  "router": {
+    "default": "deepseek",
+    "rules": [
+      {
+        "pattern": "代码|编程|debug",
+        "model": "openai"
+      },
+      {
+        "pattern": "翻译",
+        "model": "deepseek"
+      }
+    ]
+  },
+  "mcp": []
+}
