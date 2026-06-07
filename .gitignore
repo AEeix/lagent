@@ -22,6 +22,9 @@ config/lagent.json
 # Linux 编译产物（Windows 是 *.exe 已在上方）
 lagent
 
+# 构建输出
+build/
+
 # OS
 .DS_Store
 Thumbs.db
